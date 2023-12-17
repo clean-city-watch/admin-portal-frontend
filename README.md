@@ -1,18 +1,3 @@
-<p align="center">
-   <a href="https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/" target="_blank">
-      <img src="https://user-images.githubusercontent.com/749684/150333149-805037bc-8874-4a1f-876a-61a9683f8ef5.png" alt="sneat-logo" width="30px" height="auto">
-   </a>
-</p>
-
-<h1 align="center">
- 
-</h1>
-
-<p align="center">Most Powerful & Comprehensive Free Bootstrap 5 HTML Admin Dashboard Template built for developers!</p>
-
-![GitHub](https://img.shields.io/github/license/themeselection/sneat-html-admin-template-free) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/themeselection/sneat-html-admin-template-free) ![GitHub issues](https://img.shields.io/github/issues/themeselection/sneat-html-admin-template-free) ![GitHub closed issues](https://img.shields.io/github/issues-closed/themeselection/sneat-html-admin-template-free) ![Twitter Follow](https://img.shields.io/twitter/follow/Theme_Selection?style=social)
-
-[![Sneat - Bootstrap 5 HTML Admin Template Demo Screenshot](https://user-images.githubusercontent.com/80033712/153581472-452394ee-327a-4d00-a41a-c6e8036b7096.png)](https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/)
 
 ## Introduction 🚀
 
