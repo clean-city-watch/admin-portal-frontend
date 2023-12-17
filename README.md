@@ -5,9 +5,7 @@
 </p>
 
 <h1 align="center">
-   <a href="https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/" target="_blank" align="center">
-      Sneat - Free Bootstrap 5 HTML Admin Template
-   </a>
+ 
 </h1>
 
 <p align="center">Most Powerful & Comprehensive Free Bootstrap 5 HTML Admin Dashboard Template built for developers!</p>
