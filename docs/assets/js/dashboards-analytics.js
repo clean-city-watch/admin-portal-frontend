@@ -587,6 +587,344 @@
     incomeChart.render();
   }
 
+  const incomeChartEl1 = document.querySelector('#incomeChart1'),
+    incomeChartConfig1 = {
+      series: [
+        {
+          data: [24, 21, 30, 22, 42, 26, 35, 29]
+        }
+      ],
+      chart: {
+        height: 215,
+        parentHeightOffset: 0,
+        parentWidthOffset: 0,
+        toolbar: {
+          show: false
+        },
+        type: 'area'
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        width: 2,
+        curve: 'smooth'
+      },
+      legend: {
+        show: false
+      },
+      markers: {
+        size: 6,
+        colors: 'transparent',
+        strokeColors: 'transparent',
+        strokeWidth: 4,
+        discrete: [
+          {
+            fillColor: config.colors.white,
+            seriesIndex: 0,
+            dataPointIndex: 7,
+            strokeColor: config.colors.primary,
+            strokeWidth: 2,
+            size: 6,
+            radius: 8
+          }
+        ],
+        hover: {
+          size: 7
+        }
+      },
+      colors: [config.colors.primary],
+      fill: {
+        type: 'gradient',
+        gradient: {
+          shade: shadeColor,
+          shadeIntensity: 0.6,
+          opacityFrom: 0.5,
+          opacityTo: 0.25,
+          stops: [0, 95, 100]
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        strokeDashArray: 3,
+        padding: {
+          top: -20,
+          bottom: -8,
+          left: -10,
+          right: 8
+        }
+      },
+      xaxis: {
+        categories: ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          show: true,
+          style: {
+            fontSize: '13px',
+            colors: axisColor
+          }
+        }
+      },
+      yaxis: {
+        labels: {
+          show: false
+        },
+        min: 10,
+        max: 50,
+        tickAmount: 4
+      }
+    };
+  if (typeof incomeChartEl1 !== undefined && incomeChartEl1 !== null) {
+    const incomeChart1 = new ApexCharts(incomeChartEl1, incomeChartConfig1);
+    incomeChart1.render();
+  }
+
+  const incomeChartEl2 = document.querySelector('#incomeChart2'),
+    incomeChartConfig2 = {
+      series: [
+        {
+          data: [24, 21, 30, 22, 42, 26, 35, 29]
+        }
+      ],
+      chart: {
+        height: 215,
+        parentHeightOffset: 0,
+        parentWidthOffset: 0,
+        toolbar: {
+          show: false
+        },
+        type: 'area'
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        width: 2,
+        curve: 'smooth'
+      },
+      legend: {
+        show: false
+      },
+      markers: {
+        size: 6,
+        colors: 'transparent',
+        strokeColors: 'transparent',
+        strokeWidth: 4,
+        discrete: [
+          {
+            fillColor: config.colors.white,
+            seriesIndex: 0,
+            dataPointIndex: 7,
+            strokeColor: config.colors.primary,
+            strokeWidth: 2,
+            size: 6,
+            radius: 8
+          }
+        ],
+        hover: {
+          size: 7
+        }
+      },
+      colors: [config.colors.primary],
+      fill: {
+        type: 'gradient',
+        gradient: {
+          shade: shadeColor,
+          shadeIntensity: 0.6,
+          opacityFrom: 0.5,
+          opacityTo: 0.25,
+          stops: [0, 95, 100]
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        strokeDashArray: 3,
+        padding: {
+          top: -20,
+          bottom: -8,
+          left: -10,
+          right: 8
+        }
+      },
+      xaxis: {
+        categories: ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          show: true,
+          style: {
+            fontSize: '13px',
+            colors: axisColor
+          }
+        }
+      },
+      yaxis: {
+        labels: {
+          show: false
+        },
+        min: 10,
+        max: 50,
+        tickAmount: 4
+      }
+    };
+  if (typeof incomeChartEl2 !== undefined && incomeChartEl2 !== null) {
+    const incomeChart2 = new ApexCharts(incomeChartEl2, incomeChartConfig2);
+    incomeChart2.render();
+  }
+
+
+
+  const weeklyExpensesEl1 = document.querySelector('#expensesOfWeek1'),
+  weeklyExpensesConfig1 = {
+    series: [65],
+    chart: {
+      width: 60,
+      height: 60,
+      type: 'radialBar'
+    },
+    plotOptions: {
+      radialBar: {
+        startAngle: 0,
+        endAngle: 360,
+        strokeWidth: '8',
+        hollow: {
+          margin: 2,
+          size: '45%'
+        },
+        track: {
+          strokeWidth: '50%',
+          background: borderColor
+        },
+        dataLabels: {
+          show: true,
+          name: {
+            show: false
+          },
+          value: {
+            formatter: function (val) {
+              return '$' + parseInt(val);
+            },
+            offsetY: 5,
+            color: '#697a8d',
+            fontSize: '13px',
+            show: true
+          }
+        }
+      }
+    },
+    fill: {
+      type: 'solid',
+      colors: config.colors.primary
+    },
+    stroke: {
+      lineCap: 'round'
+    },
+    grid: {
+      padding: {
+        top: -10,
+        bottom: -15,
+        left: -10,
+        right: -10
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'none'
+        }
+      },
+      active: {
+        filter: {
+          type: 'none'
+        }
+      }
+    }
+  };
+if (typeof weeklyExpensesEl1 !== undefined && weeklyExpensesEl1 !== null) {
+  const weeklyExpenses1 = new ApexCharts(weeklyExpensesEl1, weeklyExpensesConfig1);
+  weeklyExpenses1.render();
+}
+
+const weeklyExpensesEl2 = document.querySelector('#expensesOfWeek2'),
+    weeklyExpensesConfig2 = {
+      series: [65],
+      chart: {
+        width: 60,
+        height: 60,
+        type: 'radialBar'
+      },
+      plotOptions: {
+        radialBar: {
+          startAngle: 0,
+          endAngle: 360,
+          strokeWidth: '8',
+          hollow: {
+            margin: 2,
+            size: '45%'
+          },
+          track: {
+            strokeWidth: '50%',
+            background: borderColor
+          },
+          dataLabels: {
+            show: true,
+            name: {
+              show: false
+            },
+            value: {
+              formatter: function (val) {
+                return '$' + parseInt(val);
+              },
+              offsetY: 5,
+              color: '#697a8d',
+              fontSize: '13px',
+              show: true
+            }
+          }
+        }
+      },
+      fill: {
+        type: 'solid',
+        colors: config.colors.primary
+      },
+      stroke: {
+        lineCap: 'round'
+      },
+      grid: {
+        padding: {
+          top: -10,
+          bottom: -15,
+          left: -10,
+          right: -10
+        }
+      },
+      states: {
+        hover: {
+          filter: {
+            type: 'none'
+          }
+        },
+        active: {
+          filter: {
+            type: 'none'
+          }
+        }
+      }
+    };
+  if (typeof weeklyExpensesEl2 !== undefined && weeklyExpensesEl2 !== null) {
+    const weeklyExpenses2 = new ApexCharts(weeklyExpensesEl2, weeklyExpensesConfig2);
+    weeklyExpenses2.render();
+  }
+
   // Expenses Mini Chart - Radial Chart
   // --------------------------------------------------------------------
   const weeklyExpensesEl = document.querySelector('#expensesOfWeek'),
